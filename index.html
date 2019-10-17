@@ -17,9 +17,7 @@
 						<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
 						<li><a class="site-navigation-link" href="#">Контакты</a></li>
 					</ul>
-					<ul class="user-navigation">
-						<li><a href="#">Корзина</a></li>
-					</ul>
+					<a class="user-navigation-link" href="#">Корзина</a>
 				</nav>
 				<h1 class="visually-hidden">Дизайн-студия nёrd's</h1>
 				
@@ -131,21 +129,23 @@
 			<h2>Напишите нам</h2>
 			<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="modal-columns">
-					<p>
+					<div>
 						<label>Ваше имя:<br>
 							<input type="text" name="name" placeholder="Имя Фамилия" autofocus>
 						</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<label>Ваш e-mail:<br>
 							<input type="email" name="mail" placeholder="email@example.com">
 						</label>
-					</p>
+					</div>
 				</div>
 				<label>Текст письма:<br>
 					<textarea rows="5" placeholder="В свободной форме"></textarea>  
 				</label>
+				<button class="button" type="submit">Отправить</button>
 			</form>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
