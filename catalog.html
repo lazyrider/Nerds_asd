@@ -16,9 +16,7 @@
 					<li><a class="site-navigation-link site-navigation-link-current">Магазин</a></li>
 					<li><a class="site-navigation-link" href="#">Контакты</a></li>
 				</ul>
-				<ul class="user-navigation">
-					<li><a href="#">Корзина</a></li>
-				</ul>
+					<a class="user-navigation-link" href="#">Корзина</a>
 			</nav>
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 		</header>
@@ -39,7 +37,7 @@
 								</div>
 						</div>
 						<fieldset>
-							<legend  >Сетка:</legend>
+							<legend class="filters-title">Сетка:</legend>
 							<ul>
 								<li>
 									<input type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
@@ -89,9 +87,9 @@
 					<div class="sorting">
 						<b class="flters-title">Сортировать:</b>
 						<ul class="sorting-list">
-							<li class="sorting-item sorting-item-selected">по цене</li>
-							<li class="sorting-item">по типу</li>
-							<li class="sorting-item">по названию</li>
+							<li class="sorting-item sorting-item-selected"><a href="#">по цене</a></li>
+							<li class="sorting-item"><a href="#">по типу</a></li>
+							<li class="sorting-item"><a href="#">по названию</a></li>
 						</ul>
 						<p class="sorting-order">
 							<a class="sorting-button sorting-down sorting-button-selected">по убыванию</a>
@@ -199,21 +197,23 @@
 			<h2>Напишите нам</h2>
 			<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="modal-columns">
-					<p>
+					<div>
 						<label>Ваше имя:<br>
 							<input type="text" name="name" placeholder="Имя Фамилия" autofocus>
 						</label>
-					</p>
-					<p>
+					</div>
+					<div>
 						<label>Ваш e-mail:<br>
 							<input type="email" name="mail" placeholder="email@example.com">
 						</label>
-					</p>
+					</div>
 				</div>
 				<label>Текст письма:<br>
 					<textarea rows="5" placeholder="В свободной форме"></textarea>  
 				</label>
+				<button class="button" type="submit">Отправить</button>
 			</form>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
