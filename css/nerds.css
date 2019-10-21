@@ -219,11 +219,10 @@ p {
 
 .site-navigation-link:active,
 .cart-link:active {
-	color: #000;
+	color: rgba(0, 0, 0, 0.3);
 }
-.navigation-link-current::after,
-.site-navigation-link::after,
-.cart-link::after {
+
+.navigation-link-current::after {
 	content: "";
 
 	position: absolute;
@@ -233,16 +232,10 @@ p {
 	width: 100%;
 	height: 2px;
 	
-	background-color: #eeeeee;
+	background-color: #fb565a;
 
 	transition: all 0.3s;
 }
-
-.navigation-link-current::after,
-.site-navigation-link:active::after,
-.cart-link:active::after {
-	background-color: #fb565a;
-	}
 
 .features {
 	position: relative;
