@@ -2,30 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Дизайн-студия nёrd's</title>
+		<title>Дизайн-студия nёrd's</title>
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/nerds.css" rel="stylesheet">
   </head>
   <body>
 		<header class="header">
 			<div class="container">
-				<nav class="main-navigation">
+				<nav class="main-navigation unselectable">
 					<a class="header-logo">
 						<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип nёrd's">
 					</a>
 					<ul class="site-navigation">
 						<li><a class="site-navigation-link" href="#">Студия</a></li>
 						<li><a class="site-navigation-link" href="#">Клиенты</a></li>
-						<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+						<li><a class="site-navigation-link navigation-link-current" href="catalog.html">Магазин</a></li>
 						<li><a class="site-navigation-link" href="#">Контакты</a></li>
 					</ul>
-					<a class="user-navigation-link" href="#">Корзина</a>
+					<a class="cart-link" href="#">Корзина</a>
 				</nav>
 				<h1 class="visually-hidden">Дизайн-студия nёrd's</h1>
 
 				<section class="features">
 					<h2 class="visually-hidden">Преимущества</h2>
-					<p class="features-title">Долго, дорого,<br>скрупулезно.</p>
-					<p class="features-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-					<a class="button features-button" href="#">Узнать больше</a>
+					<input class="visually-hidden" type="radio" name="toggle" id="features-item-1" checked>
+					<input class="visually-hidden" type="radio" name="toggle" id="features-item-2">
+					<input class="visually-hidden" type="radio" name="toggle" id="features-item-3">
+					<div class="slider-controls">
+						<label for="features-item-1"></label>
+						<label for="features-item-2"></label>
+						<label for="features-item-3"></label>
+					</div>
+					<ul class="features-list">
+						<li class="features-item">
+							<h3 class="features-title">Долго, дорого,<br>скрупулезно.</h3>
+							<p class="features-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+							<a class="button button-red features-button" href="#">Узнать больше</a>
+						</li>
+						<li class="features-item">
+							<h3 class="features-title">Любим математику<br>как никто другой</h3>
+							<p class="features-description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+							<a class="button button-red features-button" href="#">Узнать больше</a>
+						</li>
+						<li class="features-item">
+							<h3 class="features-title">Только ночь,<br>только хардкор</h3>
+							<p class="features-description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+							<a class="button button-red features-button" href="#">Узнать больше</a>
+						</li>
+					</ul>
 				</section>
 			</div>
 		</header>
@@ -131,7 +155,7 @@
 				<div class="modal-columns">
 					<div>
 						<label>Ваше имя:<br>
-							<input type="text" name="name" placeholder="Имя Фамилия" autofocus>
+							<input type="text" name="name" placeholder="Имя Фамилия">
 						</label>
 					</div>
 					<div>
