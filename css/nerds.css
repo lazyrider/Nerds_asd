@@ -127,9 +127,37 @@ p {
   background-color: #d7373b;
 }
 
+.button-green {
+	background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+	background-color: #00bc6c;
+}
+
+.button-green:active {
+	background-color: #00aa62;
+}
+
+.button-yellow {
+	background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+	background-color: #eab534;
+}
+
+.button-yellow:active {
+	background-color: #e5a722;
+}
+
 .container {
 	width: 1160px;
 	margin: 0 auto;
+
+	outline: 1px solid tomato;
 }
 
 .header {
@@ -358,4 +386,238 @@ p {
 #features-item-3:focus ~ .slider-controls label:nth-child(3) {
 	outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+.services {
+	border-bottom: 2px solid #eee;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.services-item {
+	position: relative;
+
+	width: 300px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+	padding-top: 251px;
+
+	outline: 1px solid tomato;
+}
+
+.services-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.services-item::before {
+	content: "";
+
+	position: absolute;
+	top: 80px;
+	left: 0;
+
+	width: 300px;
+	height: 146px;
+
+	background-repeat: no-repeat;
+}
+
+.services-item:first-child::before {
+	background-image: url("../img/images/services-laptop.png");
+}
+
+.services-item:nth-child(2)::before {
+	background-image: url("../img/images/services-smartphone.png");
+}
+
+.services-item:nth-child(3)::before {
+	background-image: url("../img/images/services-presentation.png");
+}
+
+.service-item-title {
+	margin: 0;
+	margin-bottom: 16px;
+
+	font-family: "Roboto-700";
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.service-item-description {
+	width: 245px;
+	margin-bottom: 32px;
+
+	line-height: 24px;
+}
+
+.services-button {
+	min-width: 160px;
+}
+
+.about {
+	position: relative;
+
+	padding-top: 74px;
+
+	border-bottom: 2px solid #eee;
+}
+
+.about::before {
+	content: "";
+
+	position: absolute;
+	top: 40px;
+	right: 0;
+
+	width: 360px;
+	height: 208px;
+
+
+	background-image: url("../img/images/nerds-illustration.jpg");
+	background-repeat: no-repeat;
+}
+
+.about-title {
+	display: block;
+	width: 660px;
+	margin-bottom: 34px;
+
+	font-family: "Roboto-500";
+	font-weight: normal;
+	font-size: 45px;
+	line-height: 45px;
+	color: #000;
+}
+
+.about-description {
+	width: 660px;
+	margin-bottom: 38px;
+
+	line-height: 24px;
+}
+
+.about-columns {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 73px;
+}
+
+.about-info {
+	width: 500px;
+
+	outline: 1px solid red;
+}
+
+.about-info-title {
+	margin: 0;
+	margin-bottom: 24px;
+
+	font-family: "Roboto-700";
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.about-info-list {
+	margin:0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.about-info-item {
+	position: relative;
+
+	margin-bottom: 24px;
+	padding-left: 36px;
+
+	line-height: 24px;
+}
+
+.about-info-item::before {
+	content: "";
+
+	position: absolute;
+	left: 1px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #fb565a;
+}
+
+.about-info-item:last-child {
+	margin-bottom: 0;
+}
+
+.about-statistics {
+	min-width: 359px;
+	max-width: 50%;
+	outline: 1px solid red;
+}
+
+.about-statistics-title {
+	margin: 0;
+	margin-bottom: 38px;
+
+	font-family: "Roboto-700";
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.about-statistics-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.about-statistics-item {
+	width: 105px;
+	margin-right: 14px;
+
+	outline: 1px solid green;
+}
+
+.about-statistics-item:last-child {
+	margin-right: 0;
+}
+
+.about-statistics-item-title {
+	display: block;
+	margin-bottom: 16px;
+
+	font-family: "Roboto-700";
+	font-weight: normal;
+	font-size: 45px;
+	color: #000;
+}
+
+.about-statistics-item-title span {
+	font-size: 26px;
+	vertical-align: super;
+}
+
+.about-statistics-item-description {
+	line-height: 18px;
 }
