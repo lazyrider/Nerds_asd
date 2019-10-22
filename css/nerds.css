@@ -156,8 +156,6 @@ p {
 .container {
 	width: 1160px;
 	margin: 0 auto;
-
-	outline: 1px solid tomato;
 }
 
 .header {
@@ -408,8 +406,6 @@ p {
 	margin-right: 100px;
 	margin-bottom: 80px;
 	padding-top: 251px;
-
-	outline: 1px solid tomato;
 }
 
 .services-item:nth-child(3n) {
@@ -514,8 +510,6 @@ p {
 
 .about-info {
 	width: 500px;
-
-	outline: 1px solid red;
 }
 
 .about-info-title {
@@ -567,7 +561,6 @@ p {
 .about-statistics {
 	min-width: 359px;
 	max-width: 50%;
-	outline: 1px solid red;
 }
 
 .about-statistics-title {
@@ -595,8 +588,6 @@ p {
 .about-statistics-item {
 	width: 105px;
 	margin-right: 14px;
-
-	outline: 1px solid green;
 }
 
 .about-statistics-item:last-child {
