@@ -54,8 +54,8 @@
 			</div>
 		</header>
 		
-		<main class="container">
-			<section class="services">
+		<main>
+			<section class="services container">
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<ul class="services-list">
 					<li class="services-item">
@@ -76,7 +76,7 @@
 				</ul>
 			</section>
 
-			<section class="about">
+			<section class="about container">
 				<h2 class="visually-hidden">О нас</h2>                   
 				<b class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
 				<p class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -111,12 +111,15 @@
 
 			<section class="portfolio">
 				<h2 class="visually-hidden">Наши работы</h2>
-				<ul class="portfolio-list">
-					<li class="portfolio-item"><a href="#">HTML Academy</a></li>
-					<li class="portfolio-item"><a href="#">Barbershop Borodinski</a></li>
-					<li class="portfolio-item"><a href="#">Pink</a></li>
-					<li class="portfolio-item"><a href="#">Mishka</a></li>
-				</ul>
+				<div class="portfolio-container">
+					<ul class="portfolio-list">
+						<li class="portfolio-item"><a href="#"><img src="img/images/htmlacdemy-logo.png" width="199" height="68" alt="HTML Academy"></a></li>
+						<li class="portfolio-item"><a href="#"><img src="img/images/borodinski-logo.png" width="209" height="90" alt="Barbershop Borodinski"></a></li>
+						<li class="portfolio-item"><a href="#"><img src="img/images/pink-logo.png" width="185" height="52" alt="Pink"></a></li>
+						<li class="portfolio-item"><a href="#"><img src="img/images/mishka-logo.png" width="173" height="74" alt="Mishka"></a></li>
+					</ul>
+				</div>
+				<div class="container"></div>
 			</section>
 		</main>
 
@@ -149,7 +152,7 @@
 			</div>
 		</footer>
 
-		<section class="modal">
+		<section class="modal visually-hidden">
 			<h2>Напишите нам</h2>
 			<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="modal-columns">

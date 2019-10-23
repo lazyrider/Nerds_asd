@@ -612,3 +612,80 @@ p {
 .about-statistics-item-description {
 	line-height: 18px;
 }
+
+.portfolio {
+	padding-top: 46px;
+	margin-bottom: 80px;
+}
+
+.portfolio-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-bottom: 44px;
+	padding: 0;
+
+	list-style: none;
+}
+
+.portfolio-item {
+	position: relative;
+
+	width: 300px;
+}
+
+.portfolio-item::after {
+	content: "";
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -1px;
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #eee;
+}
+
+.portfolio-item:nth-child(4n)::after {
+	content: none;
+}
+
+.portfolio-item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 90px;
+
+	opacity: 0.2;
+
+	transition: all 0.3s;
+}
+
+.portfolio-item a:hover,
+.portfolio-item a:focus {
+	opacity: 1;
+}
+
+.portfolio-item a:active {
+	opacity: 0.1;
+}
+
+.portfolio-item:first-child a {
+	padding-top: 9px;
+}
+
+.portfolio-item:nth-child(4) a {
+	padding-top: 6px;
+}
+
+.portfolio .container {
+	border-bottom: 2px solid #eee;
+}
