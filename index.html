@@ -13,13 +13,15 @@
 					<a class="header-logo">
 						<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип nёrd's">
 					</a>
-					<ul class="site-navigation">
-						<li><a class="site-navigation-link" href="#">Студия</a></li>
-						<li><a class="site-navigation-link" href="#">Клиенты</a></li>
-						<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-						<li><a class="site-navigation-link" href="#">Контакты</a></li>
-					</ul>
-					<a class="cart-link" href="#">Корзина</a>
+					<div class="navigation-wrapper">
+						<ul class="site-navigation">
+							<li><a class="site-navigation-link" href="#">Студия</a></li>
+							<li><a class="site-navigation-link" href="#">Клиенты</a></li>
+							<li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+							<li><a class="site-navigation-link" href="#">Контакты</a></li>			
+						</ul>
+						<a class="cart-link" href="#">Корзина</a>
+					</div>
 				</nav>
 				<h1 class="visually-hidden">Дизайн-студия nёrd's</h1>
 
@@ -59,16 +61,25 @@
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<ul class="services-list">
 					<li class="services-item">
+						<div class="service-item-image">
+							<img src="img/images/services-laptop.png" width="300" height="146" alt="Картинка с ноутбуком">
+						</div>
 						<h3 class="service-item-title">Веб-сайты</h3>
 						<p class="service-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						<a class="button button-red services-button" href="#">Заказать</a>
 					</li>
 					<li class="services-item">
+						<div class="service-item-image">
+							<img src="img/images/services-smartphone.png" width="300" height="146" alt="Картинка со смартфоном">
+						</div>
 						<h3 class="service-item-title">Приложения</h3>
 						<p class="service-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a class="button button-green services-button" href="#">Заказать</a>
 					</li>
 					<li class="services-item">
+						<div class="service-item-image">
+							<img src="img/images/services-presentation.png" width="300" height="146" alt="Картинка с доской для презентации">
+						</div>
 						<h3 class="service-item-title">Презентации</h3>
 						<p class="service-item-description">Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a class="button button-yellow services-button" href="#">Заказать</a>
@@ -77,9 +88,16 @@
 			</section>
 
 			<section class="about container">
-				<h2 class="visually-hidden">О нас</h2>                   
-				<b class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-				<p class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<h2 class="visually-hidden">О нас</h2>
+				<div class="about-columns">
+					<div>
+						<b class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+						<p class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					</div>
+					<div class="about-image">
+						<img src="img/images/nerds-illustration.jpg" width="360" height="208" alt="Логотип nёrd's">
+					</div>
+				</div>	
 				<div class="about-columns">
 					<div class="about-info">
 						<h3 class="about-info-title">Выполняем заказы на разработку:</h3>
