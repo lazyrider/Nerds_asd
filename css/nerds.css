@@ -166,7 +166,6 @@ p {
 
 .main-navigation {
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
 
 	font-family: "Roboto-500";
@@ -177,16 +176,23 @@ p {
 .header-logo {
 	width: 160px;
 	height: 65px;
+
+	margin-right: 201px;
+}
+
+.navigation-wrapper {
+	display: flex;
+	flex-grow: 1;
+	padding-top: 26px;
 }
 
 .site-navigation {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	max-width: 700px;
+	max-width: 600px;
 
 	margin: 0;
-	margin-right: 38px;
 	padding: 0;
 
 	list-style: none;
@@ -201,8 +207,7 @@ p {
 }
 
 .cart-link {
-	position: relative;
-
+	margin-left: auto;
 	padding-left: 45px;
 }
 
@@ -219,11 +224,6 @@ p {
 
 	background-image: url("../img/svg/cart-icon.svg");
 	background-repeat: no-repeat;
-}
-
-.site-navigation,
-.cart-link {
-	margin-top: 26px;
 }
 
 .site-navigation-link,
@@ -313,6 +313,7 @@ p {
 .features-item {
 	display: none;
 	padding-top: 78px;
+	padding-bottom: 80px;
 }
 
 .features-item:first-child {
@@ -352,7 +353,6 @@ p {
 
 .features-button {
 	min-width: 240px;
-	margin-bottom: 80px;
 }
 
 #features-item-1:checked ~ .features-list .features-item:first-child,
@@ -387,6 +387,9 @@ p {
 }
 
 .services {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
 	border-bottom: 2px solid #eee;
 }
 
@@ -404,37 +407,16 @@ p {
 
 	width: 300px;
 	margin-right: 100px;
-	margin-bottom: 80px;
-	padding-top: 251px;
 }
 
 .services-item:nth-child(3n) {
 	margin-right: 0;
 }
 
-.services-item::before {
-	content: "";
-
-	position: absolute;
-	top: 80px;
-	left: 0;
-
+.service-item-image {
 	width: 300px;
 	height: 146px;
-
-	background-repeat: no-repeat;
-}
-
-.services-item:first-child::before {
-	background-image: url("../img/images/services-laptop.png");
-}
-
-.services-item:nth-child(2)::before {
-	background-image: url("../img/images/services-smartphone.png");
-}
-
-.services-item:nth-child(3)::before {
-	background-image: url("../img/images/services-presentation.png");
+	margin-bottom: 25px;
 }
 
 .service-item-title {
@@ -463,30 +445,17 @@ p {
 .about {
 	position: relative;
 
-	padding-top: 74px;
+	padding-top: 40px;
+	padding-bottom: 73px;
 
 	border-bottom: 2px solid #eee;
-}
-
-.about::before {
-	content: "";
-
-	position: absolute;
-	top: 40px;
-	right: 0;
-
-	width: 360px;
-	height: 208px;
-
-
-	background-image: url("../img/images/nerds-illustration.jpg");
-	background-repeat: no-repeat;
 }
 
 .about-title {
 	display: block;
 	width: 660px;
 	margin-bottom: 34px;
+	padding-top: 34px;
 
 	font-family: "Roboto-500";
 	font-weight: normal;
@@ -505,7 +474,6 @@ p {
 .about-columns {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 73px;
 }
 
 .about-info {
@@ -645,7 +613,7 @@ p {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: -1px;
+	right: 0;
 
 	width: 2px;
 	height: 52px;
