@@ -65,7 +65,7 @@ p {
  	margin: -1px;
  	border: 0;
 	padding: 0;
-	
+
 	white-space: nowrap;
 
   clip: rect(0 0 0 0);
@@ -823,14 +823,34 @@ p {
 	left: 50%;
 	bottom: 180px;
 
-	display: none;
+	visibility: hidden;
+
 	width: 960px;
 	padding: 67px 100px 84px;
 
 	background-color: #fff;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+	opacity: 0;
 
 	transform: translateX(-50%);
+
+	transition: all 0.3s;
+}
+
+.modal-overlay-js-on {
+	position: fixed;
+
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-show-js {
+	visibility: visible;
+	opacity: 1;
 }
 
 .modal-close {
@@ -974,9 +994,6 @@ p {
 .contact-us-form textarea:focus {
 	border-color: #000;
 }
-
-
-
 
 
 
