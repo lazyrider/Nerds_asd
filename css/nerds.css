@@ -657,3 +657,159 @@ p {
 .portfolio .container {
 	border-bottom: 2px solid #eee;
 }
+
+.footer {
+	padding-bottom: 69px;
+}
+
+.contacts {
+	margin-bottom: 54px;
+}
+
+.map {
+	min-width: 1160px;
+	height: 416px;
+
+	background: url("../img/images/map.jpg") no-repeat 50% 50%; 
+}
+
+.map .container {
+	position: relative;
+}
+
+.address {
+	position: absolute;
+	top: 54px;
+	left: 0;
+
+	width: 319px;
+	padding-top: 49px;
+	padding-right: 50px;
+	padding-bottom: 47px;
+	padding-left: 50px;
+
+	background-color: #fff;
+}
+
+.address-title {
+	display: block;
+	margin-bottom: 23px;
+
+	font-family: "Roboto-700";
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.address-description {
+	line-height: 18px;
+	color: #666666;
+
+	transform: translateX(1px);
+}
+
+.address-description:first-of-type {
+	margin-bottom: 18px;
+}
+
+.address-description:nth-of-type(2) {
+	margin-bottom: 37px;
+}
+
+.address-button {
+	width: 100%;
+}
+
+.map-marker {
+	position: absolute;
+	top: 80px;
+	left: 720px;
+
+	width: 231px;
+	height: 190px;
+
+	font-size: 0;
+
+	background: url("../img/images/map-marker.png") no-repeat;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social-list {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 455px;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+
+	list-style: none;
+}
+
+.social-list-item {
+	margin-right: 12px;
+	margin-bottom: 15px;
+}
+
+.social-list-item:last-child {
+	margin-right: 0;
+}
+
+.social-list-item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 79px;
+	height: 79px;
+
+	font-size: 0;
+
+	background-color: #e1e1e1;
+	border-radius: 50%;
+
+	transition: all 0.3s;
+}
+
+.social-list-item a:hover,
+.social-list-item a:focus {
+	background-color: #e74246;
+}
+
+.social-list-item a:active {
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.social-list-item a img {
+	opacity: 1;
+
+	transition: all 0.3s;
+}
+
+.social-list-item a:active img {
+	opacity: 0.3;
+}
+
+.social-text {
+	padding-left: 139px;
+}
+
+.social-text-title {
+	display: block;
+	margin-bottom: 10px;
+
+	font-family: "Roboto-700";
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 36px;
+	color: #000;
+}
+
+.social-text-description {
+	line-height: 22px;
+	color: #444;
+}
