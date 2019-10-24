@@ -822,6 +822,7 @@ p {
 	position: fixed;
 	left: 50%;
 	bottom: 180px;
+	z-index: 20;
 
 	visibility: hidden;
 
@@ -839,13 +840,14 @@ p {
 
 .modal-overlay-js-on {
 	position: fixed;
+	z-index: 10;
 
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-show-js {
@@ -857,6 +859,7 @@ p {
 	position: absolute;
 	top: 75px;
 	right: 87px;
+	z-index: 20;
 
 	width: 27px;
 	height: 27px;
