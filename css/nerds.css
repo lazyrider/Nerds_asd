@@ -1119,17 +1119,20 @@ p {
 	margin-bottom: 0;
 }
 
-.templates-item:hover{
+.templates-item:hover,
+.templates-item:focus-within {
 	box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
-.templates-item:hover .template-info {
+.templates-item:hover .template-info,
+.templates-item:focus-within .template-info {
 	visibility: visible;
 
 	opacity: 1;
 }
 
-.templates-item:hover .templates-item-header {
+.templates-item:hover .templates-item-header,
+.templates-item:focus-within .templates-item-header {
 	opacity: 1;
 }
 
