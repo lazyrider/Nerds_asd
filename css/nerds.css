@@ -1124,6 +1124,11 @@ p {
 	box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
+.templates-item:hover .template-image,
+.templates-item:focus-within .template-image {
+	outline-color: #4d4d4d;
+}
+
 .templates-item:hover .template-info,
 .templates-item:focus-within .template-info {
 	visibility: visible;
@@ -1194,12 +1199,12 @@ p {
 
 .template-info {
 	position: absolute;
-	bottom:0;
-	left: 0;
+	bottom: 1px;
+	left: 1px;
 
 	visibility: hidden;
 
-	width: 100%;
+	width: calc(100% - 2px);
 	min-height: 231px;
 	padding-top: 27px;
 	padding-right: 65px;
