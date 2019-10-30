@@ -1131,8 +1131,6 @@ p {
 
 .templates-item:hover .template-info,
 .templates-item:focus-within .template-info {
-	visibility: visible;
-
 	opacity: 1;
 }
 
@@ -1203,8 +1201,6 @@ p {
 	position: absolute;
 	bottom: 1px;
 	left: 1px;
-
-	visibility: hidden;
 
 	width: calc(100% - 2px);
 	min-height: 231px;
