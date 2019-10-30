@@ -1195,6 +1195,8 @@ p {
 
 	outline: 1px solid #e5e5e5;
 	outline-offset: -1px;
+
+	transition: outline 0.3s;
 }
 
 .template-info {
